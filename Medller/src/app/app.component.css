@@ -1,0 +1,34 @@
+.gui
+{
+    padding: 0px;
+    margin: 0px;
+    /* background: #483d3d; */
+    /* background: rgb(233, 230, 230); */
+    height: calc(100vh - 0px);
+}
+
+.mainWindow{
+    /* padding: 0px; */
+    /* margin: 0px; */
+    min-width: 100%;
+}
+
+
+.timeline
+{
+    
+    height: 0px;
+    bottom: 0;
+}
+
+.col.timelsinecontroller
+{
+    width: 300px;
+    min-width: 300px;
+}
+
+
+.outlet{
+    height: 100vh;
+    min-height:100vh;
+}

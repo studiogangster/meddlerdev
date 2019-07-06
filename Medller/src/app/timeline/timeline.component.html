@@ -1,0 +1,24 @@
+<div class="container base">
+        <div id="buttonpanel" class="row">
+
+                <div id="icon"  (click)="stopSelectedActions()">
+                        <i class="icon" class="fas fa-stop active" aria-hidden="true"></i>
+                </div>
+
+            
+
+                <div  class="col input-group ">
+                        <div id="icon" (click)="createAction()">
+                                <i class="fas fa-play active" aria-hidden="true"></i>
+
+                        </div>
+                        <input (keyup.enter)="createAction()" [(ngModel)]="name" type="text" placeholder="{{hint}}">
+                </div>
+
+
+
+
+        </div>
+
+        <div #timeline id="timeline"> </div>
+</div>

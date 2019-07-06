@@ -1,0 +1,47 @@
+.viz-item.red {
+    color: white;
+    background-color: red;
+    /* border-color: darkred; */
+  }
+
+  #buttonpanel{
+    height: 40px;
+    margin: 0px;
+  }
+
+.fa-dot-circle-o.active
+{
+  color: red;
+}
+
+input{
+  height: 2em;
+  padding: 0px;
+  font-size: 1.0em;
+  line-height: 2em;
+}
+
+
+
+.fa
+{
+  line-height: 2em;
+  font-size: 2em;
+  /* height: 30px; */
+}
+
+.fa-stop{
+  color: red;
+}
+.fa-play{
+  color: green;
+}
+
+.base{
+  background: #fff;
+}
+
+#icon{
+  width: 2em;
+  line-height: 2em;
+}

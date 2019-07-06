@@ -1,0 +1,53 @@
+
+
+<div class="body  align-items-center ">
+    <div class="container ">
+      <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-6 mx-auto">
+          <!-- <div class="col-8"> -->
+          <!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io! -->
+            <div class="card">
+              <div class="card-body">
+                  <p class="text-center  card-title">Create Project</p>
+                  <!-- Text -->
+                  <p class="text-center card-text">Create a new project. Enter te details below:</p>
+                  <form  class="form-signin" name="login" autocomplete="off">
+
+                      <div class="md-form  "    >
+                          <input  (keyup.enter)="createProject()"   [ngModelOptions]="{standalone: true}"      mdbInputDirective id="inputValidationEx2" type="text" [mdbValidate]="false" class="form-control "  [(ngModel)]="projectName"  >
+                          <label   for="inputValidationEx2" data-error="wrong" data-success="right"  >Project Name</label>
+                      </div>
+                    </form>
+
+              </div>
+              
+
+                
+                  </div>
+        </div>
+      </div>
+
+      <br>
+<div class="row" *ngIf="!creating">
+    <div class="col-sm-9 col-md-7 col-lg-6 mx-auto">
+    <div class="card">
+  
+        <!-- Card image -->
+      
+        <!-- Card content -->
+        <div class="card-body">
+      
+          <button  mdbBtn mdbWavesEffect class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" (click)="createProject()" >Create</button>
+    
+      </div>
+    
+      </div>
+</div>
+
+</div>
+
+    </div>
+  </div>
+  
+
+  

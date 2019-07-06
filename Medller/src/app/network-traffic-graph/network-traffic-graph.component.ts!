@@ -1,0 +1,37 @@
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { Network, DataSet, Node, Edge, IdType } from 'vis';
+import { DataSetService } from './../DataSet/data-set.service';
+// import { WebsocketService } from './../DataSet/websocket.service';
+@Component({
+  selector: 'app-network-traffic-graph',
+  templateUrl: './network-traffic-graph.component.html',
+  styleUrls: ['./network-traffic-graph.component.css']
+})
+export class NetworkTrafficGraphComponent implements OnInit {
+  @ViewChild('mynetwork', { static: true }) mynetwork;
+
+  constructor(private dataSetService: DataSetService ) {
+    // this.websocketService.getNetworkTraffic();
+  }
+  get getDataSet() {
+    return this.dataSetService.getDataSet;
+  }
+
+  ngOnInit() {
+    this.dataSetService.initialiseCompulsoryNodes();
+    console.log(this.dataSetService.getDataSetOptions);
+    const network = new Network(this.mynetwork.nativeElement, this.getDataSet, this.dataSetService.getDataSetOptions);
+    network.on('click', (properties) => {
+      const ids = properties.nodes;
+      // const clickedNodes = nodes.get(ids);
+      this.dataSetService.onClickNode(ids);
+
+    });
+
+
+  }
+
+
+
+
+}

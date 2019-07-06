@@ -1,0 +1,50 @@
+.btn.create{
+    background: linear-gradient(40deg,#ff6ec4,#7873f5)!important;
+    // border-radius: 10em;
+    border-top-left-radius: 10em;
+    border-bottom-left-radius: 10em;
+    width: 100%;
+    line-height: 10px;
+    // padding: 0px;
+    
+}
+
+.ovalbtn{
+    margin: 0px;
+    padding: 0px;
+}
+.btn.stop{
+    background: linear-gradient(50deg,#45cafc,#303f9f)!important;
+    // border-radius: 10em;
+    border-top-right-radius: 10em;
+    border-bottom-right-radius: 10em;
+    width: 100%;
+    line-height: 10px;
+    // padding: 0px;
+}
+
+.btn.search{
+    background: linear-gradient(40deg,#FFD86F,#FC6262)!important;
+    // border-radius: 10em;
+    border-top-right-radius: 3em;
+    border-bottom-right-radius: 3em;
+    width: 100%;
+    line-height: 10px;
+    // padding: 0px;
+}
+
+.container-fluid{
+    // padding: 0px;
+}
+
+.input 
+{
+    height: 30px;
+    max-height: 30px;
+    width: 100%;
+    padding: 0px;
+
+}
+form{
+    width: 100%;
+}

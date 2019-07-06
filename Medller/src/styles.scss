@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    /* background: #483d3d; */
+    margin: 0px;
+    padding: 0px;
+    // background: #000;
+    //  background: rgb(41, 39, 39);
+    //  background: #4A148C;
+   
+}
+
+.vis-text {
+    /* background: green; */
+    color: green;
+    
+  }
+
+
+.vis-item {
+    margin: 0px;
+    padding: 0px;
+    /* height: 1.5rem; */
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    /* color: white; */
+    background-color: #78f2d2;
+    
+    border-color: #43e1a7;
+  }
+  .vis-item.vis-selected {
+    margin: 0px;
+    padding: 0px;
+    /* height: 1.5rem; */
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    /* color: white; */
+    background-color: #43e1a7;
+    
+    border-color: #43e1a7;
+  }
+
+  .vis-timeline.vis-bottom
+  {
+height: calc(20vh - 1.5rem);
+  }
+
+
+  body{
+   
+  }

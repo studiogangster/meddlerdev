@@ -1,0 +1,50 @@
+.viz-item.red {
+    color: white;
+    background-color: red;
+    /* border-color: darkred; */
+  }
+
+#list-item{
+
+  // padding-top: 20px;
+
+}
+.column{
+  padding: 0px;
+}
+  #buttonpanel{
+
+    margin: 0px;
+  }
+
+.fa-dot-circle-o.active
+{
+  color: red;
+}
+.row{
+  // margin-top: 20px;
+  // margin-bottom: 20px;
+  // margin-left: 0px;
+  // margin-right: 0px;
+
+  
+}
+
+.fa
+{
+
+  font-size: 25px;
+
+}
+
+.base{
+  background: #fff;
+}
+#method{
+  max-width: 8ch;
+  width: 8ch;
+}
+#url{
+  max-width: calc(100% - 8ch);
+  width: calc(100% - 8ch);
+}

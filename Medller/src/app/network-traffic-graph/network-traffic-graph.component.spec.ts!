@@ -1,0 +1,25 @@
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { NetworkTrafficGraphComponent } from './network-traffic-graph.component';
+
+describe('NetworkTrafficGraphComponent', () => {
+  let component: NetworkTrafficGraphComponent;
+  let fixture: ComponentFixture<NetworkTrafficGraphComponent>;
+
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
+      declarations: [ NetworkTrafficGraphComponent ]
+    })
+    .compileComponents();
+  }));
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(NetworkTrafficGraphComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

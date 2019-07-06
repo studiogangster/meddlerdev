@@ -1,0 +1,20 @@
+<div class="container-fluid">
+  
+    <div class="row">
+        <div class="col-6 ovalbtn">
+            <button (click)="onCreate()" class="btn create btn-rounded waves-effect waves-light">Create</button>
+        </div>
+        <div class="col-6 ovalbtn">
+
+            <button *ngIf="( networkService.selectedTimelineItems| async)?.length > 0" (click)="stopSelectedActions()" class="btn stop  btn-rounded waves-effect waves-light">Stop  </button>
+            <button *ngIf="( networkService.selectedTimelineItems| async)?.length <= 0" (click)="searchSelectedActions()" class="btn search  btn-rounded waves-effect waves-light">Search</button>
+
+
+        </div>
+    </div>
+</div>
+
+
+<div>
+
+</div>

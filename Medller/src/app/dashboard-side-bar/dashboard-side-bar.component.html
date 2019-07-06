@@ -1,0 +1,40 @@
+
+
+
+    <div class="row menutop ">
+        
+       
+      <div   class=" navbar sticky-top contain col-12"   >   
+                      
+          <p id="logo" (click)="navBarClicked()" >
+              <i class="fas left fa-bars"></i>
+            Meddler </p>
+          
+                   
+        </div>
+        <!-- <div class="navbtnContainer col-4" (click)="goBack()"> -->
+          <!-- <i class="fas left fa-angle-left"  ></i> -->
+          <!-- <i class="fas left fa-home"></i> -->
+        
+          
+        <!-- </div> -->
+           
+          <div class="col-12">
+            <p id="logo" >{{dataFactoryService.GetProject}}</p>
+          </div>
+             
+
+          
+
+
+  
+
+      
+      </div>
+
+<ng-container *ngIf=" ComponentStatus.LOADED == componentStatus " >
+<div  class="col-12 item " *ngFor="let item of getItems; index as index ; trackBy: trackElement" [class.active]="selectedItem == index"  [class.highlight]="highlightedItem == index"   (mouseleave) ="onLeave(index)" (click)="goTo(index)"  (mouseenter) ="onEnter(index)"  > 
+        <app-menu-item   [item]="item" ></app-menu-item>
+</div>
+</ng-container>
+

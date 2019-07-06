@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row section-box "  >
+      <ng-container *ngFor="let scene of _obsServiceService.getScenes()" >
+            <div id="text" *ngIf="scene.name.split('NewsRoomWith').length  >=  2" (click)="onClick(scene.name)" [class.active]="_obsServiceService.getCurrentScene()== scene.name "   [class.activeX]=" _obsServiceService.getNextScene() == scene.name  "   class="col-6 text-center description-text p-0"  >
+                <p>{{scene.name.split("NewsRoomWith")[1]}}</p>
+                <div id="zoom"   (click)="zoom($event);false">
+                        
+                </div>
+            </div>
+      </ng-container>
+  </div>
+</div>
+
+

@@ -1,0 +1,144 @@
+:root {
+    --input-padding-x: 1.5rem;
+    --input-padding-y: .75rem;
+  }
+  
+  .body {
+    background: rgb(0, 0, 0);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(60deg, #29323c 0%, #485563 100%);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: calc(100vh - 4rem);
+    min-height: calc(100vh - 4rem);
+
+    overflow-y: auto;
+
+  }
+  
+  .card-signin {
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  }
+  
+.card-title {
+    margin-bottom: 2rem;
+    font-weight: 250;
+    font-size: 2.5rem;
+
+  }
+
+.card-text {
+  
+    font-weight: 250;
+    
+  }
+  
+  .card-signin .card-body {
+    padding: 2rem;
+  }
+  
+  .form-signin {
+    width: 100%;
+  }
+  
+  .form-signin .btn {
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    transition: all 0.2s;
+  }
+  
+  .form-label-group {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+.phone  {
+    // border-radius: 1.5rem;
+  }
+
+  
+
+  .phone  {
+    width: 80%;
+    border-top-left-radius : 0rem;
+    border-bottom-left-radius : 0rem;
+  }
+
+  .country  {
+    width: 20%;
+    // border-radius: 1.5rem;
+  }
+
+  
+
+  .country {
+    border-top-right-radius : 0rem;
+    border-bottom-right-radius : 0rem;
+  }
+  
+
+  
+  .form-label-group>label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    /* Override default `<label>` margin */
+    line-height: 1.5;
+    color: #495057;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: all .1s ease-in-out;
+  }
+  
+
+  
+  .form-label-group input:not(:placeholder-shown) {
+    padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+    padding-bottom: calc(var(--input-padding-y) / 3);
+  }
+  
+  .form-label-group input:not(:placeholder-shown)~label {
+    padding-top: calc(var(--input-padding-y) / 3);
+    padding-bottom: calc(var(--input-padding-y) / 3);
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .btn-google {
+    color: white;
+    background-color: #ea4335;
+  }
+  
+  .btn-facebook {
+    color: white;
+    background-color: #3b5998;
+  }
+
+  input{
+      min-height: 3rem;
+      height: 3rem;
+      // text-align: center;
+      font-size: 1rem;
+  }
+
+
+  .recaptcha{
+    padding: 1rem;
+    min-width: 100%;
+    width: 100%;
+
+  }
+
+  .recaptcha {
+    transform-origin: left top;
+    -webkit-transform-origin: left top;
+  }

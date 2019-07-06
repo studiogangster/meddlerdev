@@ -1,0 +1,79 @@
+.col-6:before,
+.col-8:before {
+  content: '';
+  width: 0;
+}
+
+.col-6:before,
+.col-8:before,
+.ib {
+  white-space: normal;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+.col-6:before {
+  padding-top: 100%;
+  /* makes expand to a square */
+}
+
+.col-8:before {
+  padding-top: 50%;
+  /* makes a rectangle half the height of a square */
+}
+
+[class^="col"] {
+  white-space: nowrap;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 5px white;
+  padding: 0;
+  text-align: center;
+  background: url(http://lorempixel.com/400/200) tomato;
+  background-size: cover;
+}
+
+.row {
+  color: white;
+  text-shadow: 0 0 black, 0 0 2px black;
+}
+
+.col-6 {
+  background: gray;
+}
+
+.col-6.activeX {
+    background:rgb(109, 14, 30);
+  }
+
+
+.col-6.active {
+    background: #000;
+  }
+
+ 
+  
+
+div{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    word-wrap: break-word;
+    text-align: center;
+}
+p{
+    font-size: 30px;
+    width: 100%;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+#zoom{
+  width: 80px;
+  height: 80px;
+  background: rgb(218, 218, 219);
+  position: absolute; 
+  bottom:3px; 
+  right:3px;
+
+}
